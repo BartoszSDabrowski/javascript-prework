@@ -3,7 +3,7 @@
 
         function clearMessages(){}
 
-        function getMoveName(argMoveId){
+        const getMoveName = function(argMoveId){
             if(argMoveId == 1){
                 return 'kamień';
             } else if (argMoveId == 2){
@@ -16,7 +16,7 @@
             }
         }
 
-        function displayResult(argComputerMove, argPlayerMove){
+        const displayResult = function(argComputerMove, argPlayerMove){
             console.log('Komputer wybiera ' + argComputerMove + ', gracz wybiera ' + argPlayerMove);
             printMessage('Ja wybieram ' + argComputerMove + ', Ty wybierasz ' + argPlayerMove + '.');
 
