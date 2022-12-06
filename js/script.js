@@ -16,16 +16,39 @@
             }
         }
 
+        /*const displayResult = function(argComputerMove, argPlayerMove){
+            console.log('Komputer wybiera ' + argComputerMove + ', gracz wybiera ' + argPlayerMove);
+            printMessage('Ja wybieram ' + argComputerMove + ', Ty wybierasz ' + argPlayerMove + '.');
+
+            if(argComputerMove == 'kamień' && argPlayerMove == 'papier'){
+                printMessage('Ty wygrywasz!');
+            } else if (argComputerMove == 'papier' && argPlayerMove == 'nożyce'){
+                printMessage('Ty wygrywasz!');
+            } else if (argComputerMove == 'nożyce' && argPlayerMove == 'kamień'){
+                printMessage('Ty wygrywasz!');
+            } else if (argComputerMove == 'kamień' && argPlayerMove == 'nożyce'){
+                printMessage('Ja wygrywam!');
+            } else if (argComputerMove == 'papier' && argPlayerMove == 'kamień'){
+                printMessage('Ja wygrywam!');
+            } else if (argComputerMove == 'nożyce' && argPlayerMove == 'papier'){
+                printMessage('Ja wygrywam!');
+            } else if (argComputerMove == argPlayerMove){
+                printMessage('Remis!');
+            } else {
+                printMessage('Gra nierozsrzygnięta');
+            }
+        }*/
+
         const displayResult = function(argComputerMove, argPlayerMove){
             console.log('Komputer wybiera ' + argComputerMove + ', gracz wybiera ' + argPlayerMove);
             printMessage('Ja wybieram ' + argComputerMove + ', Ty wybierasz ' + argPlayerMove + '.');
 
-            if((argComputerMove == 'kamień' && argPlayerMove == 'papier') || (argComputerMove == 'papier' && argPlayerMove == 'nożyce') || (argComputerMove == 'nożyce' && argPlayerMove == 'kamień')){
-                printMessage('Ty wygrywasz!');
-            } else if ((argComputerMove == 'kamień' && argPlayerMove == 'nożyce') || (argComputerMove == 'papier' && argPlayerMove == 'kamień') || (argComputerMove == 'nożyce' && argPlayerMove == 'papier')) {
-                printMessage('Ja wygrywam!');
-            } else {
+            if(argComputerMove == argPlayerMove){
                 printMessage('Remis!');
+            } else if ((argComputerMove == 'kamień' && argPlayerMove == 'papier') || (argComputerMove == 'papier' && argPlayerMove == 'nożyce') || (argComputerMove == 'nożyce' && argPlayerMove == 'kamień')){
+                printMessage('Ty wygrywasz!');
+            } else {
+                printMessage('Ja wygrywam!');
             }
         }
 
