@@ -3,20 +3,7 @@
 
         function clearMessages(){}
 
-        /* function getMoveName(argMoveId){
-            if(argMoveId == 1){
-                return 'kamień';
-            } else if (argMoveId == 2){
-                return 'papier';
-            } else if (argMoveId == 3){
-                return 'nożyce';
-            } else {
-                printMessage('Nie znam ruchu o id ' + argMoveId + '.');
-                return 'nieznany ruch';
-            }
-        } */
-
-        const getMoveName = function(argMoveId){
+        function getMoveName(argMoveId){
             if(argMoveId == 1){
                 return 'kamień';
             } else if (argMoveId == 2){
@@ -29,7 +16,7 @@
             }
         }
 
-        const displayResult = function(argComputerMove, argPlayerMove){
+        function displayResult(argComputerMove, argPlayerMove){
             console.log('Komputer wybiera ' + argComputerMove + ', gracz wybiera ' + argPlayerMove);
             printMessage('Ja wybieram ' + argComputerMove + ', Ty wybierasz ' + argPlayerMove + '.');
 
